@@ -1,0 +1,292 @@
+/*说明*/
+/*
+本网页完全在Chrome且版本为53上测试 系统为Ubuntu16.04
+没有处理对不同浏览器的兼容性设置
+请用Google-Chrome查看
+*/
+
+/*总体字体设置*/
+body {
+  font-size: 20px;
+  font-family:sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*按钮定位*/
+#bottom-positioner {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+}
+/*子元素继承父元素位置使得没有触发时处于同一位置*/
+#button {
+  position: inherit;
+}
+.apb {
+  position: inherit;
+}
+
+/*设置列表的风格为none不要每条目前面的点*/
+li {
+  list-style: none;
+}
+
+
+
+
+/*对@设置*/
+
+/*对@按钮初始化 这是没有触发的效果*/
+.icon {
+  position: relative;
+  bottom: -8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-color: rgba(167, 137, 201, 1);
+  background-image: url(../res/images/atplus_white.png);
+  background-repeat: no-repeat;
+  transition-duration: 0.6s;
+  transition-delay: 1.2s;
+}
+/*@按钮被触发的效果*/
+#button:hover .icon {
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+  background-size: 80%;
+  background-position: 50% 50%;
+  background-color: rgba(48, 63, 159, 1);
+  background-image: url(../res/images/atplus_green.png);
+  background-repeat: no-repeat;
+  transform: scale(2.5);
+}
+
+
+
+
+/*对info-bar的设置*/
+
+/*设置info的排版*/
+.info {
+  text-align: center;
+}
+/*最大的圆初始化scale设置为0相当于不可见*/
+#info-bar {
+  position: absolute;
+  top: -66px;
+  left: -83px;
+  border-radius: 50%;
+  background-color: rgba(159, 161, 155, 1);
+  width: 165px;
+  height: 165px;
+  transform: scale(0.000000000001) translateX(199%) translateY(-4%);
+  transition-delay: 0.8s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+/*图片属性*/
+#info-bar .info img {
+  height: 33px;
+  width: 33px;
+}
+/*user的定位*/
+.info .user {
+  position: relative;
+  left: -16px;
+  bottom: 10px;
+  vertical-align: bottom;
+}
+/*user的字体设置*/
+.info .user span {
+  position: relative;
+  bottom: 4px;
+  vertical-align: bottom;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+}
+/*comment的定位*/
+.info .comment {
+  position: relative;
+  bottom: 12px;
+  left: -11px;
+}
+/*comment的字体设置*/
+.info .comment span {
+  vertical-align: bottom;
+  padding: 25px;
+  font-size: 45px;
+  color: white;
+}
+/*mine也就是like和posted的字体设置*/
+.info .mine {
+  font-size: 24px;
+  margin-top: -7px;
+  float: left;
+  color: #32D095;
+}
+/*like和posted的排版设置*/
+.info .like {
+  margin-left: 10px;
+}
+.info .posted {
+  margin-left: -17px;
+}
+/*like和posted的文字定位*/
+.info .mine span {
+  display: block;
+  float: right;
+  margin-top: 4px;
+  margin-left: 7px;
+  font-weight: bold;
+}
+/*info被触发的状态*/
+#button:hover #info-bar {
+  width: 165px;
+  height: 165px;
+  transition-delay: 0s;
+  transform: scale(1) translateY(-78%) translateX(9%);
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+
+
+
+/*4个周围按钮的设置*/
+
+/*位置设置继承自最初的button-postion*/
+#control-ring-container {
+  position: inherit;
+}
+#control-ring {
+  position: inherit;
+}
+/*对每个小按钮定位，使其最初叠在@按钮位置*/
+li.button {
+  position:absolute;
+  left: -20%;
+  top: -27px;
+}
+
+/*分别是4个按钮初始状态和触发状态的设置*/
+/*mask初始*/
+#control-ring .mask {
+  background: url(../res/images/nomask.png) no-repeat;
+  background-position: center;
+  background-color: rgba(159, 161, 155, 1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transform: scale(0) translateX(-210%) translateY(-46%);
+  transition-delay: 0.8s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+/*mask触发*/
+#button:hover .mask {
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transform: scale(1) translateX(-163%) translateY(-98%);
+  opacity: 1;
+}
+/*history初始*/
+#control-ring .history {
+  width: 50px;
+  height: 50px;
+  background: url(../res/images/history.png) no-repeat;
+  background-position: center;
+  background-color: rgba(159, 161, 155, 1);
+  border-radius: 50%;
+  transform: scale(0) translateX(-244%) translateY(56%);
+  transition-delay: 0.8s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+/*history触发*/
+#button:hover #control-ring .history {
+  transform: scale(1) translateX(-226%) translateY(-8%);
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  opacity: 1;
+}
+/*message初始*/
+#control-ring .message {
+  width: 50px;
+  height: 50px;
+  background: url(../res/images/message.png) no-repeat;
+  background-position: center;
+  background-color: rgba(159, 161, 155, 1);
+  transform: scale(0) translateX(-199%) translateY(157%);
+  border-radius: 50%;
+  transition-delay: 0.8s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+/*message触发*/
+#button:hover #control-ring .message {
+  transform: scale(1) translateX(-200%) translateY(106%);
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  opacity: 1;
+}
+/*message的右上角数量的设置*/
+#control-ring .unread {
+  display: block;
+  position: relative;
+  left: 66%;
+  top: -12%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+/*setting初始*/
+#control-ring .setting {
+  width: 50px;
+  height: 50px;
+  background: url(../res/images/setting.png) no-repeat;
+  background-position: center;
+  background-color: rgba(159, 161, 155, 1);
+  border-radius: 50%;
+  transform: scale(0) translateX(-100%) translateY(210%);
+  transition-delay: 0.8s;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+/*seeting触发*/
+#button:hover #control-ring .setting {
+  transform: scale(1) translateX(-103%) translateY(181%);
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+/*sign初始*/
+#control-ring .sign {
+  width: 50px;
+  height: 50px;
+  background: url(../res/images/signin.png) no-repeat;
+  background-position: center;
+  background-color: rgba(159, 161, 155, 1);
+  border-radius: 50%;
+  transform: scale(0) translateX(0%) translateY(0%);
+  transition-duration: 0.5s;
+  transition-delay: 0.8s;
+  opacity: 0;
+}
+/*sign触发*/
+#button:hover #control-ring .sign {
+  transform: scale(1) translateX(19%) translateY(177%);
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  opacity: 1;
+}

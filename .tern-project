@@ -1,0 +1,17 @@
+{
+  "ecmaVersion": 7,
+  "libs": [
+    "browser",
+    "chai",
+    "underscore"
+  ],
+  "plugins": {
+    "complete_strings": {
+      "maxLength": 15
+    },
+    "doc_comment": {
+      "fullDocs": true,
+      "strong": false
+    }
+  }
+}

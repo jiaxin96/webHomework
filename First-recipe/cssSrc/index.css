@@ -1,0 +1,47 @@
+body {
+  background-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+}
+img {
+  height: 150pt;
+  width: 150pt;
+}
+ol {
+  color: #f60688;
+  font-size: 19pt;
+}
+
+/*第一段文字*/
+div.firstp {
+  font-size: 19pt;
+  color: rgba(201, 20, 255, 0.99);
+}
+h1 ,h2{
+  font-family: 'Century Gothic',futura, verdana, sans-serif;
+}
+h1 {
+    color: #b212f4;
+    background-color: rgba(145, 162, 6, 0.47);
+  font-size: 27pt;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+    color: #f101c3;
+  font-size: 20pt;
+  font-weight: normal;
+}
+body {
+  background-color: #FFFFFF;
+  color: #404040;
+  font-size: 11pt;
+  font-family: Georgia, Garamond, serif;
+}
+a {
+  color: rgba(250, 0, 30, 0.57);
+}
+
+/*最后一段文字*/
+div.theend {
+  font-size: 35pt;
+  color: rgb(247, 209, 6);
+}

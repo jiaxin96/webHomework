@@ -1,0 +1,222 @@
+* {
+    font: 30px sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.playAreaPostion {
+  position: relative;
+    text-align: center;
+    width: 514px;
+    height: 514px;
+    margin: 50px auto 50px auto;
+}
+
+.playArea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 1px;
+}
+
+.endBar {
+    width: 100%;
+}
+
+.endBar button {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.pic {
+    background-image: url(../res/panda.jpg);
+    background-size: 500px 500px;
+    width: 125px;
+    height: 125px;
+    border: solid 1px;
+    transition: 0.15s linear;
+}
+
+
+/*开始游戏后的类名*/
+
+.newPic {
+    position: inherit;
+    background-image: url(../res/panda.jpg);
+    background-size: 500px 500px;
+    float: left;
+    width: 125px;
+    height: 125px;
+    margin: 1px 1px 0 0px;
+    border: solid 1px;
+}
+
+.pic:hover {
+    transform: scale(1.04);
+}
+
+.pic1 {
+    background-position: 0px 0px;
+}
+
+.pic2 {
+    background-position: -125px 0;
+}
+
+.pic3 {
+    background-position: -250px 0;
+}
+
+.pic4 {
+    background-position: -375px 0;
+}
+
+.pic5 {
+    background-position: 0px -125px;
+}
+
+.pic6 {
+    background-position: -125px -125px;
+}
+
+.pic7 {
+    background-position: -250px -125px;
+}
+
+.pic8 {
+    background-position: -375px -125px;
+}
+
+.pic9 {
+    background-position: 0px -250px;
+}
+
+.pic10 {
+    background-position: -125px -250px;
+}
+
+.pic11 {
+    background-position: -250px -250px;
+}
+
+.pic12 {
+    background-position: -375px -250px;
+}
+
+.pic13 {
+    background-position: 0px -375px;
+}
+
+.pic14 {
+    background-position: -125px -375px;
+}
+
+.pic15 {
+    background-position: -250px -375px;
+}
+
+.pic16 {
+  border: none;
+    background-image: none;
+}
+
+#pos1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#pos2 {
+    position: absolute;
+    top: 0px;
+    left: 129px;
+}
+
+#pos3 {
+    position: absolute;
+    top: 0px;
+    left: 258px;
+}
+
+#pos4 {
+    position: absolute;
+    top: 0px;
+    left: 387px;
+}
+
+#pos5 {
+    position: absolute;
+    top: 129px;
+    left: 0px;
+}
+
+#pos6 {
+    position: absolute;
+    top: 129px;
+    left: 129px;
+}
+
+#pos7 {
+    position: absolute;
+    top: 129px;
+    left: 258px;
+}
+
+#pos8 {
+    position: absolute;
+    top: 129px;
+    left: 387px;
+}
+
+#pos9 {
+    position: absolute;
+    top: 258px;
+    left: 0px;
+}
+
+#pos10 {
+    position: absolute;
+    top: 258px;
+    left: 129px;
+}
+
+#pos11 {
+    position: absolute;
+    top: 258px;
+    left: 258px;
+}
+
+#pos12 {
+    position: absolute;
+    top: 258px;
+    left: 387px;
+}
+
+#pos13 {
+    position: absolute;
+    top: 387px;
+    left: 0px;
+}
+
+#pos14 {
+    position: absolute;
+    top: 387px;
+    left: 129px;
+}
+
+#pos15 {
+    position: absolute;
+    top: 387px;
+    left: 258px;
+}
+
+#pos16 {
+    position: absolute;
+    top: 387px;
+    left: 387px;
+}

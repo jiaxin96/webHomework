@@ -1,0 +1,128 @@
+body {
+
+    background-image: url(../img/background.png);
+    font-size: 8pt;
+    font-family: Verdana, sans-serif, Tahoma;
+    margin: 0;
+    padding: 0;
+}
+.Body {
+  position: relative;
+}
+
+.bannerimg {
+  background-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/2/bannerbackground.png");
+	background-repeat: repeat-x;
+	height: 50px;
+	text-align: center;
+}
+
+.MainTitle {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.MainBlock {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border: solid;
+    border-width: 4px;
+    border-color: gray;
+}
+
+.rotten #reatImg {
+    height: 83px;
+    vertical-align: bottom;
+}
+
+.rotten #reat {
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+.rotten #reviewsTotal {
+    color: white;
+    font-size: 8pt;
+}
+
+.rotten {
+    width: 550px;
+    overflow: hidden;
+    height: 83px;
+    background-image: url(./../img/rottenbackground.png);
+    background-repeat: repeat-x;
+    vertical-align: bottom;
+}
+
+.MoviePoster {
+    float: right;
+    height: 100%;
+    width: 250px;
+    background-color: #A2B964;
+}
+
+.MoviePoster dl {
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.MoviePoster dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.allQuote {
+    width: 550px;
+}
+
+.allQuote .column {
+    float: left;
+    margin-left: 2%;
+    width: 47%;
+    overflow: hidden;
+}
+
+.allQuote .singleQ {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.allQuote .singleQ .p1 {
+    background-color: #E1D697;
+    font-size: 8pt;
+    font-weight: bold;
+    border: solid;
+    border-color: gray;
+    border-width: 2px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.allQuote .singleQ .p2 {
+    overflow: hidden;
+    font-style: italic;
+}
+
+.allQuote img {
+    float: left;
+    margin-right: 5px;
+}
+
+#endBar {
+    margin: auto;
+    background-color: #A2B964;
+    text-align: center;
+    clear: both;
+    padding: 5px;
+}
+
+.endImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

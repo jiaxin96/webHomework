@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+}
+table, th, td {
+    border-width: 1px;
+    border-color: #D6D5D5;
+    border-style: solid;
+    padding: 3px 20px 3px 6px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+    color: white;
+    background-color: #021A7D;
+    text-align: left;
+}
+.sortedAscend, .sortedDescend {
+    background-repeat: no-repeat;
+	background-position: right;
+    background-color: #A4AFFC;
+}
+.sortedAscend {
+    background-image: url("../res/ascend.png")
+}
+
+.sortedDescend {
+    background-image: url("../res/descend.png")
+}
+.normal {
+	background-color: #000080;
+}
+tbody tr:nth-child(even) {
+	background-color: #DDDDDD;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #FFFFFF;
+}

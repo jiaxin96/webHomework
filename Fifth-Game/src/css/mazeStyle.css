@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/*标题*/
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+/*提示框*/
+.hint {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/*游戏区域的位置 大小*/
+.playArea {
+    display: block;
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+/*开始结束位置大小*/
+.endPos {
+  text-align: center;
+  font-size: 60px;
+  overflow: hidden;
+  float: right;
+  position: relative;
+  display: block;
+  height: 64px;
+  width: 68px;
+  top: 2px;
+  right: 0px;
+  border: solid;
+  border-width: 1px;
+  background-color: rgb(134,132,255);
+}
+
+.startPos {
+    overflow: hidden;
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    float: left;
+    display: block;
+    bottom: -2px;
+    left: 0px;
+    height: 64px;
+    width: 68px;
+    border: solid;
+    border-width: 1px;
+    background-color: rgb(126, 254, 133);;
+}
+
+
+/*road上的鼠标样式*/
+.road:hover, .endPos:hover, .startPos:hover {
+  cursor: pointer;
+}
+
+/*墙的背景*/
+.wall {
+  background-color: rgb(238, 238, 238);
+}
+/*碰到后的背景*/
+.newWall {
+  background-color: red;
+}
+
+/*对应每个路的位置大小*/
+.leftRoad {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    display: block;
+    height: 389px;
+    width: 70px;
+    left: -75px;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+.rightRoad {
+    overflow: hidden;
+    float: right;
+    position: relative;
+    display: block;
+    height: 389px;
+    width: 70px;
+    right: 0px;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+
+.downRightRoad {
+  overflow: hidden;
+  float: right;
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 200px;
+  top: 0;
+  right: 0;
+}
+
+
+.downLeftRoad {
+  overflow: hidden;
+  clear: right;
+  position: relative;
+  float: left;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  height: 70px;
+  width: 185px;
+}
+
+.upRoad {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    left: 255px;
+    width: 75px;
+    height: 69px;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+
+/*对应每个墙的属性*/
+.leftWall {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: block;
+    height: 389px;
+    width: 183px;
+		left: -75px;
+    border: solid;
+    border-width: 0 1px 1px 1px;
+}
+
+.rightWall {
+    overflow: hidden;
+    float: right;
+    display: block;
+    height: 389px;
+    width: 198px;
+    border: solid;
+    border-width: 0 1px 1px 1px;
+}
+
+
+.midWall {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    left: 0;
+    top: -320px;
+    display: block;
+    height: 389px;
+    width: 73px;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+
+}
+
+.upWall {
+    width: 600px;
+}
+.upWall1, .upWall3 {
+  float: left;
+  top: 0;
+  height: 79px;
+  width: 184px;
+}
+.upWall1 {
+  border: solid;
+  border-width: 1px 0 0 1px;
+}
+.upWall3 {
+  border: solid;
+  border-width: 1px 1px 0 0;
+  width: 199px;
+}
+.upWall2 {
+  float: left;
+  top: 0;
+  height: 79px;
+  width: 215px;
+  border: solid;
+  border-width: 1px 0 0 0;
+}
+
+.downWall {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: block;
+    bottom: 320px;
+    height: 60px;
+    width: 600px;
+}
+.downWall1, .downWall3 {
+  float: left;
+  top: 0;
+  height: 58px;
+  width: 254px;
+}
+.downWall1 {
+  border: solid;
+  border-width: 1px 0 1px 1px;
+}
+.downWall3 {
+  width: 269px;
+  border: solid;
+  border-width: 1px 1px 1px 0;
+}
+
+.downWall2 {
+  float: left;
+  top: 0;
+  height: 59px;
+  width: 75px;
+  border: solid;
+  border-width: 0 0 1px 0;
+}
+
+/*最后的提示信息和墙例子的属性*/
+.wallExample {
+  display: block;
+  background-color: rgb(238, 238, 238);
+  margin: 20px auto 20px auto;
+  top: 0;
+  height: 60px;
+  width: 100px;
+  border: solid;
+  border-width: 1px 1px 1px 1px;
+}
+.ednBar {
+  display: block;
+  width: 700px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}

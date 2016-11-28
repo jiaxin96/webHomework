@@ -1,0 +1,364 @@
+* {
+    font: 30px sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*æ ‡é¢˜æ */
+h1 {
+    text-align: center;
+}
+
+
+
+.state {
+  margin: 20px auto 0 auto;
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  /*border: solid 1px;*/
+}
+
+
+
+
+
+/*æ¸¸æˆåŒºåŸŸ å›¾ç‰‡æ‰€åœ¨åœ°*/
+/*æ¸¸æˆåŒºå®šä½*/
+.playAreaPostion {
+  position: relative;
+    text-align: center;
+    width: 514px;
+    height: 514px;
+    margin: 20px auto 20px auto;
+}
+
+
+/*æ¸¸æˆåŒºå¤§å°è®¾ç½® è¾¹æ¡†è®¾ç½®*/
+.playArea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 1px;
+}
+
+
+
+
+
+
+
+
+/*å¯åŠ¨æŒ‰é’®*/
+.endBar {
+    width: 514px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+.endBar button {
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+
+
+
+
+
+.selecPicPos {
+  position: relative;
+  display: block;
+  margin: 100px auto 50px auto;
+  width: 100px;
+  height: 100px
+}
+
+.mainButton {
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(110, 14, 115, 0.45);
+}
+
+
+
+
+
+
+.liuyifei {
+  transform: scale(0.001);
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+}
+.selecPicPos:hover .liuyifei {
+  transition-delay: 0.5s;
+  transform: translateX(-80px) translateY(-40px);
+  transition-duration: 0.8s;
+}
+.wuyifan {
+  transform: scale(0.001);
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+}
+.selecPicPos:hover .wuyifan {
+  transform: translateX(0px) translateY(-80px);
+    transition-duration: 0.8s;
+}
+.fasha {
+  transform: scale(0.001);
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+}
+.selecPicPos:hover .fasha {
+  transform: translateX(80px) translateY(-40px);
+    transition-duration: 0.8s;
+}
+
+.mainButton span {
+  display: inline-block;
+  margin: 20px auto 10px auto;
+}
+.backgroundPicture {
+  position: absolute;
+}
+.backgroundPicture img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+
+
+
+
+
+
+/*å›¾ç‰‡æ€»å±žæ€§*/
+.mpic {
+    background-image: url(../res/panda.jpg);
+    background-size: 500px 500px;
+    width: 125px;
+    height: 125px;
+    border: solid 1px;
+    transition: 0.15s linear;
+}
+.mpic:hover {
+    transform: scale(1.04);
+}
+
+
+.lpic {
+    background-image: url(../res/liuyifei.jpg);
+    background-size: 500px 500px;
+    width: 125px;
+    height: 125px;
+    border: solid 1px;
+    transition: 0.15s linear;
+}
+.lpic:hover {
+    transform: scale(1.04);
+}
+
+
+.wpic {
+    background-image: url(../res/wuyifan.jpg);
+    background-size: 500px 500px;
+    width: 125px;
+    height: 125px;
+    border: solid 1px;
+    transition: 0.15s linear;
+}
+.wpic:hover {
+    transform: scale(1.04);
+}
+
+
+.fpic {
+    background-image: url(../res/fasha.jpg);
+    background-size: 500px 500px;
+    width: 125px;
+    height: 125px;
+    border: solid 1px;
+    transition: 0.15s linear;
+}
+.fpic:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+
+/*èƒŒæ™¯å›¾åˆ’åˆ†æˆ16å¿«*/
+.pic1 {
+    background-position: 0px 0px;
+}
+
+.pic2 {
+    background-position: -125px 0;
+}
+
+.pic3 {
+    background-position: -250px 0;
+}
+
+.pic4 {
+    background-position: -375px 0;
+}
+
+.pic5 {
+    background-position: 0px -125px;
+}
+
+.pic6 {
+    background-position: -125px -125px;
+}
+
+.pic7 {
+    background-position: -250px -125px;
+}
+
+.pic8 {
+    background-position: -375px -125px;
+}
+
+.pic9 {
+    background-position: 0px -250px;
+}
+
+.pic10 {
+    background-position: -125px -250px;
+}
+
+.pic11 {
+    background-position: -250px -250px;
+}
+
+.pic12 {
+    background-position: -375px -250px;
+}
+
+.pic13 {
+    background-position: 0px -375px;
+}
+
+.pic14 {
+    background-position: -125px -375px;
+}
+
+.pic15 {
+    background-position: -250px -375px;
+}
+
+.pic16 {
+  border: none;
+    background-image: none;
+}
+
+
+/*èƒŒæ™¯å®šä½*/
+#pos1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#pos2 {
+    position: absolute;
+    top: 0px;
+    left: 129px;
+}
+
+#pos3 {
+    position: absolute;
+    top: 0px;
+    left: 258px;
+}
+
+#pos4 {
+    position: absolute;
+    top: 0px;
+    left: 387px;
+}
+
+#pos5 {
+    position: absolute;
+    top: 129px;
+    left: 0px;
+}
+
+#pos6 {
+    position: absolute;
+    top: 129px;
+    left: 129px;
+}
+
+#pos7 {
+    position: absolute;
+    top: 129px;
+    left: 258px;
+}
+
+#pos8 {
+    position: absolute;
+    top: 129px;
+    left: 387px;
+}
+
+#pos9 {
+    position: absolute;
+    top: 258px;
+    left: 0px;
+}
+
+#pos10 {
+    position: absolute;
+    top: 258px;
+    left: 129px;
+}
+
+#pos11 {
+    position: absolute;
+    top: 258px;
+    left: 258px;
+}
+
+#pos12 {
+    position: absolute;
+    top: 258px;
+    left: 387px;
+}
+
+#pos13 {
+    position: absolute;
+    top: 387px;
+    left: 0px;
+}
+
+#pos14 {
+    position: absolute;
+    top: 387px;
+    left: 129px;
+}
+
+#pos15 {
+    position: absolute;
+    top: 387px;
+    left: 258px;
+}
+
+#pos16 {
+    position: absolute;
+    top: 387px;
+    left: 387px;
+}

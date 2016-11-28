@@ -1,0 +1,124 @@
+* {
+    font-family: sans-serif serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*标题*/
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*副标题*/
+
+.guide {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+/*游戏区域上面的控制 和状态栏*/
+
+.startBar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+}
+
+
+/*开始按钮*/
+
+.startAndEnd {
+    margin-left: 18%;
+    width: 180px;
+    height: 25px;
+    float: left;
+    font-size: 15px;
+    display: block;
+    margin-right: 70px;
+}
+
+
+/*分数时间 游戏状态*/
+
+.time, .score, .state {
+    display: inline-block;
+    font-size: 27px;
+    vertical-align: bottom;
+}
+
+.state {
+    margin-left: 18%;
+    width: 180px;
+    height: 30px;
+    border: solid;
+    border-width: 0px 0px 1px 1px;
+    margin-right: 60px;
+    border-color: rgb(150, 150, 150);
+}
+
+.time span, .score span {
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 20px;
+    width: 50px;
+    border: solid;
+    border-width: 1px 2px 2px 1px;
+    border-color: rgb(150, 150, 150);
+}
+
+
+/*游戏区域 各个地鼠的设置*/
+
+.playArea {
+    border: solid;
+    border-width: 1px 0 1px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 320px;
+    margin-top: 30px;
+}
+
+.playArea .row {
+    padding-top: 12px;
+}
+
+.playArea input {
+    margin: 10px;
+}
+
+.playArea .mole {
+    margin-left: 10px;
+}
+
+
+/*游戏区域下方的提醒*/
+
+.instruction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-top: 80px;
+}
+
+.instruction p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.instruction li {
+    font-size: 20px;
+    padding-left: 25px;
+    list-style: none;
+}

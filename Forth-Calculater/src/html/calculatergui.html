@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculater</title>
+    <script src="../js/calculater.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 class="CalculaterName">简单的计算器</h1>
+    <div class="calculaterMainBlock">
+        <div class="button">
+            <div class="interAction">
+                <!-- <table class="viewFrame">
+                    <tr>
+                        <td id="outputAns"></td>
+                    </tr>
+                </table> -->
+                <input type="text" id="outputAns"/>
+            </div>
+            <table class="allbutton">
+                <tr>
+                    <td class="SingleButton" onclick="appContent(this)">7</td>
+                    <td class="SingleButton" onclick="appContent(this)">8</td>
+                    <td class="SingleButton" onclick="appContent(this)">9</td>
+                    <td class="SingleButton" onclick="appContent(this)">/</td>
+                </tr>
+                <tr>
+                    <td class="SingleButton" onclick="appContent(this)">4</td>
+                    <td class="SingleButton" onclick="appContent(this)">5</td>
+                    <td class="SingleButton" onclick="appContent(this)">6</td>
+                    <td class="SingleButton" onclick="appContent(this)">*</td>
+                </tr>
+                <tr>
+                    <td class="SingleButton" onclick="appContent(this)">1</td>
+                    <td class="SingleButton" onclick="appContent(this)">2</td>
+                    <td class="SingleButton" onclick="appContent(this)">3</td>
+                    <td class="SingleButton" onclick="appContent(this)">-</td>
+                </tr>
+                <tr>
+                    <td class="SingleButton" onclick="appContent(this)">0</td>
+                    <td class="SingleButton" onclick="appContent(this)">.</td>
+                    <td class="SingleButton" onclick="appContent(this)">←</td>
+                    <td class="SingleButton" onclick="appContent(this)">+</td>
+                </tr>
+                <tr>
+                    <td class="SingleButton" onclick="appContent(this)">(</td>
+                    <td class="SingleButton" onclick="appContent(this)">)</td>
+                    <td class="SingleButton" onclick="appContent(this)">=</td>
+                    <td class="SingleButton" onclick="appContent(this)">CE</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body {
+    background: url(../../res/blackBord.jpg);
+    background-size: 100%;
+    font-family: sans-serif serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 57px;
+    background: #EEE url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
+    text-shadow: 5px -5px black, 4px -4px white;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.calculaterMainBlock {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    display: block;
+    text-align: center;
+}
+
+.allbutton {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+}
+
+.interAction {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 35px;
+    border: solid;
+    border-width: medium;
+    background-color: rgb(182, 197, 205);
+}
+
+.interAction input {
+    width: 100%;
+    font-size: 25px;
+    text-align: right;
+    background-color: rgb(182, 197, 205);
+}
+
+
+/* Begin Chunky Button */
+
+.allbutton td {
+    /* Normal State */
+    padding: 4px 15px 7px 15px;
+    width: auto;
+    height: auto;
+    background: #999;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.50);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    border-top: 1px solid rgba(0, 0, 0, 0.001);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.10);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.10);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.10);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.10);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.10);
+    cursor: pointer;
+}
+
+.allbutton td:hover {
+    /* Hover State */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.25);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.25);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.25);
+    -webkit-animation: glow 1s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.allbutton td:active {
+    /* Active State (clicked on) */
+    padding: 6px 15px 5px 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.55);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 2px 1px rgba(255, 255, 255, 0.50), inset 0px 1px 4px rgba(0, 0, 0, 0.35), inset 0px -14px 14px rgba(255, 255, 255, 0.10);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 2px 1px rgba(255, 255, 255, 0.50), inset 0px 1px 4px rgba(0, 0, 0, 0.35), inset 0px -14px 14px rgba(255, 255, 255, 0.10);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 2px 1px rgba(255, 255, 255, 0.50), inset 0px 1px 4px rgba(0, 0, 0, 0.35), inset 0px -14px 14px rgba(255, 255, 255, 0.10);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 2px 1px rgba(255, 255, 255, 0.50), inset 0px 1px 4px rgba(0, 0, 0, 0.35), inset 0px -14px 14px rgba(255, 255, 255, 0.10);
+    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 2px 1px rgba(255, 255, 255, 0.50), inset 0px 1px 4px rgba(0, 0, 0, 0.35), inset 0px -14px 14px rgba(255, 255, 255, 0.10);
+    -webkit-animation: none;
+    cursor: pointer !important;
+}
+
+
+/* End Chunky Button */
+
+
+/* Start Glow Animation */
+
+@-webkit-keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.35);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.35);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.35);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.35);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.35);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.18);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.18);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.18);
+        -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.18);
+        -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.18), inset 0px -3px 0px rgba(0, 0, 0, 0.35), inset 0px 14px 14px rgba(255, 255, 255, 0.18);
+    }
+}
+
+
+/* End Glow Animation */
+
+
+/*.allbutton td {
+    background-color: #3bb3e0;
+    padding: 10px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+    -o-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+    box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.allbutton td::before {
+    background-color: #072239;
+    content: "";
+    display: block;
+    position: absolute;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 4px;
+    left: -2px;
+    top: 5px;
+    z-index: -1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 1px 0px #fff;
+    -moz-box-shadow: 0px 1px 0px #fff;
+    -o-box-shadow: 0px 1px 0px #fff;
+    box-shadow: 0px 1px 0px #fff;
+}
+
+.allbutton td:active {
+    color: #156785;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+    background: rgb(44, 160, 202);
+    -webkit-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+    -moz-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+    -o-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+    box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+    top: 7px;
+}
+
+.allbutton td::before {
+    top: -2px;
+}*/
