@@ -40,6 +40,7 @@ function start() {
 			} else {
 				res.writeHead(301, {Location: ''});
 				res.end();
+				
 			}
 		});
 	}
