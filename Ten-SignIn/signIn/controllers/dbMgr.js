@@ -77,9 +77,6 @@ module.exports = function (db) {
 
 		checkDataUnique: function (user) {
 			debug('Start check unique');
-			// return users.findOne(user).then(function(foundUser) {
-			// 	return foundUser ? Promise.reject('Data is not unique'): Promise.resolve('ok');
-			// });
 			return new Promise(function(resolve, reject) {
 				debug("Get in check");
 				users.findOne({username: user.username})
@@ -125,34 +122,6 @@ module.exports = function (db) {
 				});
 
 			});
-			// 	.then(function () {
-			// 		users.findOne({id: user.id})
-			// 		.then(function (foundUser) {
-			// 			if (foundUser) {
-			// 				reject('id');
-			// 			}
-			// 		})
-			// 	})
-			// 	.then(function () {
-			// 		users.findOne({phone: user.phone})
-			// 		.then(function (foundUser) {
-			// 			if (foundUser) {
-			// 				reject('phone');
-			// 			}
-			// 		})
-			// 	})
-			// 	.then(function () {
-			// 		users.findOne({email: user.email})
-			// 		.then(function (foundUser) {
-			// 			if (foundUser) {
-			// 				reject('email');
-			// 			}
-			// 		})
-			// 	})
-			// 	.then(function () {
-			// 		resolve('ok');
-			// 	});
-			// });
 		}
 
 
