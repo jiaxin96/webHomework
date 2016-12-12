@@ -92,8 +92,10 @@ module.exports = function(db) {
 
 
 	router.get('/detile', function(req, res, next) {
-		debug(req.session.user);
-		res.render('detile', { title: '详情' , user: req.session.user});
+		if (req.session.user)
+			res.render('detile', { title: '详情' , user: req.session.user});
+		else
+			res.redirect('/signIn');
 	});
 
 
