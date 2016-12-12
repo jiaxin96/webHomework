@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title sign in
+    link(rel='stylesheet', type='text/css', href='stylesheets/signin.css')
+    script(src='javascripts/jquery.js', type='text/javascript')
+    script(src='javascripts/signIn.js', type='text/javascript')
+  body
+    .register
+      form(method='post')
+        h2
+          | 登录
+          span.red
+            strong XXX学生管理系统
+        label(for='id')
+          | 学号:
+          if error  == 'idEr'
+            span.errorMs.idErrMes 没有这个用户
+        input#id(type='text', name='id', placeholder='8位学号')
+        if error  == 'idEr'
+          span.error.idEr
+        label(for='passwd')
+          | 密码:
+          if error == 'passwdEr'
+            span.errorMs.passwdErrMes 密码错误
+        input#passwd(type='password', name='passwd', placeholder='个人密码')
+        if error == 'passwdEr'
+          span.error.passwdEr
+        button.login(type='submit') 登录
+      a.registHtml(href='/regist')
+        button.regist 注册

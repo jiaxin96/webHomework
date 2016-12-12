@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title sign up
+    link(rel='stylesheet', type='text/css', href='stylesheets/MyStyle.css')
+  body
+    .register
+      h2
+        span.red
+          strong 用户详情
+      label(for='username') 姓名:
+      input#username(type='text', name='username', value='#{user.username}')
+      label(for='id') 学号:
+      input#id(type='text', name='id', value='#{user.id}')
+      label(for='phone') 电话:
+      input#phone(type='text', name='phone', value='#{user.phone}')
+      label(for='email') 邮箱:
+      input#email(type='text', name='email', value='#{user.email}')
+      form(method='post')
+        button.regist(type='none') 退出

@@ -1,0 +1,52 @@
+doctype html
+html
+	head
+		title 注册
+		link(rel='stylesheet', type='text/css', href='stylesheets/regist.css')
+		script(src='javascripts/jquery.js', type='text/javascript')
+		script(src='javascripts/signUp.js', type='text/javascript')
+	body
+		div.register
+			form(method='post')
+				h2 注册
+					span.red
+						strong XXX学生管理系统
+					span 用户
+				
+				label(for='username') 姓名:
+					span(class='errorMs usernameErrMes')
+				input(type='text' id='username' name='username' placeholder='用户名6~18位英文字母、数字或下划线，必须以英文字母开头')
+				span(class='error nameEr')
+			
+			
+				label(for='id') 学号:
+					span(class='errorMs idErrMes')
+				input(type='text' id='id' name='id' placeholder='学号8位数字，不能以0开头')
+				span(class='error idEr')
+			
+			
+				label(for='phone') 电话:
+					span(class='errorMs phoneErrMes')
+				input(type='text' id='phone' name='phone' placeholder='电话11位数字，不能以0开头')
+				span(class='error phoneEr')
+			
+			
+				label(for='email') 邮箱:
+					span(class='errorMs emailErrMes')
+				input(type='text' id='email' name='email' placeholder='输入合法的常用邮箱')
+				span(class='error emailEr')
+
+			
+				label(for='passwd') 密码:
+					span(class='errorMs passwdErrMes')
+				input(type='password' id='passwd' name='passwd' placeholder='密码为6~12位数字、大小写字母、中划线、下划线')
+				span(class='error passwdEr')
+
+			
+				label(for='rpasswd') 确认密码:
+					span(class='errorMs rpasswdErrMes')
+				input(type='password' id='rpasswd' name='rpasswd' placeholder='输入合法的常用邮箱')
+				span(class='error rpasswdEr')
+
+				button.regist(type='submit' disabled='true') 注册
+				button.reset(type='reset') 重置
