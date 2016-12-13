@@ -31,7 +31,9 @@ module.exports = function (db) {
 					user.passwd = passwd;
 					if (user.rpasswd) delete user.rpasswd;
 					if (user.submit) delete user.submit;
+					debug("Resolve user and start insert user to database");
 					resolve(user);
+					debug("resolve user end");
 					return users.insert(user);
 				})
 				.catch(function (error) {

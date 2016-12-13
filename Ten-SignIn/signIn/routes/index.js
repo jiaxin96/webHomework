@@ -4,16 +4,29 @@ var debug = require('debug')('signin:index');
 
 module.exports = function(db) {
 	var dbMgr = require('../controllers/dbMgr')(db);
-
-	var users = db.collection('users');
-	debug("Users Set from db:",users);
+	var CurrentUser = "";
+	// var users = db.collection('users');
+	// debug("Users Set from db:",users);
 
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
-		res.render('signIn', { title: '登录' });
+		debug(CurrentUser);
+		if (CurrentUser) {	
+			req.session.user = CurrentUser;
+			res.render('detile', { title: '详情' , user: req.session.user});
+		}
+		else {
+			debug('Get in Signin');
+			res.render('signIn', { title: '登录' });
+		}
 	});
 	router.get('/signIn', function(req, res, next) {
-		res.render('signIn', { title: '登录' });
+		if (CurrentUser) {
+			req.session.user = CurrentUser;
+			res.render('detile', { title: '详情' , user: req.session.user});
+		}
+		else
+			res.render('signIn', { title: '登录' });
 	});
 
 	router.post('/signIn', function(req, res, next) {
@@ -21,7 +34,7 @@ module.exports = function(db) {
 		dbMgr.queryUserByIdAndPasswd(req.body.id, req.body.passwd)
 		.then(function (user) {
 			debug("query user end");
-			req.session.user = user;
+			CurrentUser = req.session.user = user;
 			res.redirect('/detile');
 		}).catch(function (error) {
 			debug("This"+error);
@@ -33,7 +46,7 @@ module.exports = function(db) {
 		dbMgr.queryUserByIdAndPasswd(req.body.id, req.body.passwd)
 		.then(function (user) {
 			debug("query user end");
-			req.session.user = user;
+			CurrentUser = req.session.user = user;
 			res.redirect('/detile');
 		}).catch(function (error) {
 			debug("This"+error.message);
@@ -65,7 +78,7 @@ module.exports = function(db) {
 			// userController.showAllUsers();
 			debug('Regist succeed jump to detail');
 			debug(user);
-			req.session.user = user;
+			CurrentUser = req.session.user = user;
 			debug(req.session.user.username);
 			res.redirect('/detile');
 		})
@@ -78,6 +91,7 @@ module.exports = function(db) {
 
 	router.post('/detile', function(req, res, next) {
 		delete req.session.user;
+		CurrentUser = "";
 		res.redirect('/signIn');
 	});
 
@@ -93,8 +107,10 @@ module.exports = function(db) {
 
 	router.get('/detile', function(req, res, next) {
 		// debug(req.session.user);
-		if (req.session.user)
+		if (CurrentUser) {
+			req.session.user = CurrentUser;
 			res.render('detile', { title: '详情' , user: req.session.user});
+		}
 		else
 			res.redirect('/signIn');
 	});
@@ -105,7 +121,10 @@ module.exports = function(db) {
 
 
 	router.all('*', function(req, res, next) {
-		req.session.user ? next() : res.redirect('/signIn');
+		CurrentUser ? function () {	
+			req.session.user = CurrentUser;
+			next();
+		} : res.redirect('/signIn');
 	});
 
 
