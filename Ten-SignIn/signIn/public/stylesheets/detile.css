@@ -8,7 +8,6 @@
     float: right;
     background-color: red;
     border-radius: 50%;
-    display: none;
 }
 
 .errorMs {
@@ -30,8 +29,6 @@ strong { font-weight: 700; }
     width: 600px;
     height: 600px;
     margin: 80px auto  0 auto;
-}
-.register form {
     display: block;
     padding: 20px 50px 40px 50px;
     -moz-border-radius: 8px;
@@ -43,7 +40,7 @@ strong { font-weight: 700; }
 
 }
 
-.register form h2 {
+.register h2 {
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 2px dotted #bbb;
@@ -52,7 +49,7 @@ strong { font-weight: 700; }
     text-align: center;
 }
 
-.register form input {
+.register input {
     width: 90%;
     height: 30px;
     background: #fcfcfc;
@@ -67,26 +64,26 @@ strong { font-weight: 700; }
     font-size: 16px;
 }
 
-.register form input:focus {
+.register input:focus {
     border: 1px solid #ccc;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.register form label {
+.register label {
     display: block;
     margin: 7px 0 10px 5px;
     font-size: 16px;
     text-align: left;
 }
 
-.register form label span {
+.register label span {
     font-style: italic;
 }
 
 
-.register form button {
+.register button {
     display: block;
     cursor: pointer;
     width: 200px;

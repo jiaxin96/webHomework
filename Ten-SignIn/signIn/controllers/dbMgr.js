@@ -34,7 +34,7 @@ module.exports = function (db) {
 					debug("Resolve user and start insert user to database");
 					resolve(user);
 					debug("resolve user end");
-					return users.insert(user);
+					return users.insert(user); 
 				})
 				.catch(function (error) {
 					reject(error);
@@ -75,6 +75,23 @@ module.exports = function (db) {
 				});
 			});
 		},
+
+
+
+		queryUserByName: function(name) {
+			debug('getting document name');
+			return new Promise(function(resolve, reject) {
+				debug("Start query " + name +" by id")
+				users.findOne({username : name}).then(function(foundUser) {
+					debug(foundUser);
+					debug("Has found");
+					foundUser ? resolve(foundUser) : reject('No such user exists');
+				});
+			});
+		},
+
+
+
 
 
 		checkDataUnique: function (user) {

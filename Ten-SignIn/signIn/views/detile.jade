@@ -3,12 +3,15 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title sign up
-    link(rel='stylesheet', type='text/css', href='stylesheets/MyStyle.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/detile.css')
   body
     .register
       h2
         span.red
-          strong 用户详情
+          if error == ""
+            strong 用户详情
+          else
+            strong 只能够访问自己的数据
       label(for='username') 姓名:
       input#username(type='text', name='username', value='#{user.username}')
       label(for='id') 学号:

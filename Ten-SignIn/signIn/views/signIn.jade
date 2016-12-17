@@ -17,6 +17,8 @@ html(lang='en')
           | 学号:
           if error  == 'idEr'
             span.errorMs.idErrMes 没有这个用户
+          if error == "FeiFa"
+            span.errorMs.idErrMes 非法访问
         input#id(type='text', name='id', placeholder='8位学号')
         if error  == 'idEr'
           span.error.idEr
