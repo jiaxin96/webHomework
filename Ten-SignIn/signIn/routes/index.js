@@ -13,7 +13,6 @@ module.exports = function(db) {
 
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
-		debug(CurrentUser);
 		visitUserName = querysing.parse(url.parse(req.url).query).username;
 		debug("Visit user is ", visitUserName);
 		if (visitUserName) {
@@ -80,7 +79,6 @@ module.exports = function(db) {
 	router.post('/userRepeatDataCheck', function(req, res, next) {
 		debug("receive check unique post");
 		var user = req.body;
-		debug(user);
 		dbMgr.checkDataUnique(user).then(function(val){
 			debug("resolve return " + val);
 			res.end('ok');
@@ -92,12 +90,10 @@ module.exports = function(db) {
 
 	router.post('/regist', function(req, res, next) {
 		var user = req.body;
-		debug("Regist user info without encryption" , req.body);
 		dbMgr.RegistUser(user)
 		.then(function(user) {
 			// userController.showAllUsers();
 			debug('Regist succeed jump to detail');
-			debug(user);
 			CurrentUser = req.session.user = user;
 			visitUserName = CurrentUser.username;
 			debug(req.session.user.username);
